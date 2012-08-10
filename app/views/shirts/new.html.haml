@@ -1,0 +1,4 @@
+= semantic_form_for shirt do |form|
+  = form.input :name
+  = form.input :size,  :as => :select, :collection => [['XL'],['L'],['M'],['S']]
+  = form.action :submit, label: 'Submit'
