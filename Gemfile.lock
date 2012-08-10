@@ -96,6 +96,12 @@ GEM
     guard-spork (1.1.0)
       guard (>= 1.1)
       spork (>= 0.8.4)
+    haml (3.1.6)
+    haml-rails (0.3.4)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      haml (~> 3.0)
+      railties (~> 3.0)
     high_voltage (1.1.1)
     hike (1.2.1)
     i18n (0.6.0)
@@ -137,6 +143,8 @@ GEM
       mime-types
     pg (0.14.0)
     polyglot (0.3.3)
+    quiet_assets (1.0.1)
+      railties (~> 3.1)
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -240,12 +248,14 @@ DEPENDENCIES
   formtastic
   guard
   guard-spork
+  haml-rails
   high_voltage
   jquery-rails
   launchy
   newrelic_rpm
   paperclip
   pg
+  quiet_assets
   rails (= 3.2.6)
   rspec-rails (~> 2.9.0)
   sass-rails (~> 3.2.3)

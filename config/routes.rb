@@ -1,4 +1,3 @@
 Opentshirtexchange::Application.routes.draw do
-  root :to => 'Clearance::Sessions#new'
-
+  root :to => 'home#index'
 end
