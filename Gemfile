@@ -19,7 +19,6 @@ gem 'paperclip'
 gem 'quiet_assets'
 gem 'thin'
 gem 'twitter-bootstrap-rails'
-gem 'decent_exposure'
 
 group :development do
   gem 'foreman'
