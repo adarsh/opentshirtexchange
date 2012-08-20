@@ -4,7 +4,7 @@ Feature: List A Shirt
   I want to list a shirt to trade
 
   Scenario:
-    Given I have signed up as "ralph@example.com"
+    Given I have signed up as "alice@example.com"
     When I list a shirt
     And I go to the home page
     Then I should see that shirt listed

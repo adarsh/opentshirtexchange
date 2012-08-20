@@ -11,14 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120810222450) do
+ActiveRecord::Schema.define(:version => 20120820042345) do
 
   create_table "shirts", :force => true do |t|
     t.integer  "user_id"
-    t.string   "name"
+    t.string   "description"
     t.string   "size"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                                :null => false
+    t.datetime "updated_at",                                :null => false
+    t.integer  "small_quantity",             :default => 0, :null => false
+    t.integer  "medium_quantity",            :default => 0, :null => false
+    t.integer  "large_quantity",             :default => 0, :null => false
+    t.integer  "extra_large_quantity",       :default => 0, :null => false
+    t.integer  "extra_extra_large_quantity", :default => 0, :null => false
   end
 
   create_table "users", :force => true do |t|

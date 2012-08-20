@@ -50,7 +50,7 @@ end
 
 When "I sign out" do
   visit "/"
-  click_link "Sign out"
+  click_link "Sign Out"
 end
 
 # Reset password
@@ -115,7 +115,7 @@ end
 
 Then /^I should be signed in$/ do
   visit "/"
-  page.should have_content "Sign out"
+  page.should have_content "Sign Out"
 end
 
 Then /^I should be signed out$/ do

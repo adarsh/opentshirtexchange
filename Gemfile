@@ -11,7 +11,8 @@ end
 
 gem 'airbrake'
 gem 'clearance'
-gem 'formtastic'
+gem 'formtastic', '~>2.0.2'
+gem 'formtastic-bootstrap'
 gem 'haml-rails'
 gem 'high_voltage'
 gem 'jquery-rails'

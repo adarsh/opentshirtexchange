@@ -1,0 +1,16 @@
+<%= semantic_form_for @shirt do |f| %>
+  <%= f.semantic_errors %>
+
+  <%= f.inputs do %>
+    <%= f.input :description, label: 'Description' %>
+    <%= f.input :small_quantity, label: 'S' %>
+    <%= f.input :medium_quantity, label: 'M' %>
+    <%= f.input :large_quantity, label: 'L' %>
+    <%= f.input :extra_large_quantity, label: 'XL' %>
+    <%= f.input :extra_extra_large_quantity, label: 'XXL' %>
+  <% end %>
+
+  <%= f.buttons do %>
+    <%= f.commit_button :button_html %>
+  <% end %>
+<% end %>
