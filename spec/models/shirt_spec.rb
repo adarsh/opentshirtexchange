@@ -16,4 +16,8 @@ describe Shirt do
   it { should validate_presence_of(:large_quantity) }
   it { should validate_presence_of(:extra_large_quantity) }
   it { should validate_presence_of(:extra_extra_large_quantity) }
+
+  it 'should allow shirt quantities less than zero' do
+
+  end
 end

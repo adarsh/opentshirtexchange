@@ -4,10 +4,12 @@ class Shirt < ActiveRecord::Base
 
   belongs_to :user
 
-  validates :description, presence: true
-  validates :small_quantity, presence: true
-  validates :medium_quantity, presence: true
-  validates :large_quantity, presence: true
-  validates :extra_large_quantity, presence: true
-  validates :extra_extra_large_quantity, presence: true
+  validates :description, presence: true, numericality: { greater_than: 0 }
+  validates :small_quantity, presence: true, numericality: { greater_than: 0 }
+  validates :medium_quantity, presence: true, numericality: { greater_than: 0 }
+  validates :large_quantity, presence: true, numericality: { greater_than: 0 }
+  validates :extra_large_quantity, presence: true,
+    numericality: { greater_than: 0 }
+  validates :extra_extra_large_quantity, presence: true,
+    numericality: { greater_than: 0 }
 end
