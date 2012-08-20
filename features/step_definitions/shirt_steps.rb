@@ -16,4 +16,6 @@ Then 'I should see that shirt listed' do
   page.should have_content('L: 1')
   page.should have_content('XL: 1')
   page.should have_content('XXL: 1')
+
+  page.should have_content('Shirt was successfully added')
 end

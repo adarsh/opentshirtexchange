@@ -13,7 +13,8 @@ class ShirtsController < ApplicationController
     @shirt = Shirt.new(params[:shirt])
 
     if @shirt.save!
-      redirect_to root_path, notice: 'Shirt was successfully added'
+      flash[:notice] = 'Shirt was successfully added'
+      redirect_to root_path
     else
       render :new
     end
